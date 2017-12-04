@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Amsterdam User Interface</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+
+		<header id="main_header">
+			<img src="img/header_logo.png" alt="Логотип">
+			<h1>THE AMSTERDAM USER INTERFACE</h1>
+			<p>by <a href="#" title="">secretpixels.com</a></p>
+		</header>
+
+		<div class="wrap_for_content">
+			<div class="nav_and_main_content">
+
+			<!-- Начало меню навигации -->
+				<div class="nav_wrap">
+					<nav>
+						<ul>
+							<li><a class="nav_active" href="#" title="Домой"><img src="img/nav_home.png" alt=""><p>
+								Home
+							</p></a></li>
+							<li><a href="#" title="Галерея"><img src="img/nav_gallery.png" alt=""><p>
+								Gallery
+							</p></a></li>
+							<li><a href="#" title="Сообщения"><img src="img/nav_message.png" alt=""><p>
+								Message
+							</p></a></li>
+							<li><a href="#" title="Музыка"><img src="img/nav_music.png" alt=""><p>
+								Music
+							</p></a></li>
+							<li><a href="#" title="Поиск"><img src="img/nav_search.png" alt=""><p>
+								Search
+							</p></a></li>
+							<li><a href="#" title="Настройки"><img src="img/nav_settings.png" alt=""><p>
+								Settings
+							</p></a></li>
+							<li><a href="#" title="Местоположение"><img src="img/nav_location.png" alt=""><p>
+								Location
+							</p></a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- Конец меню навигации -->
+
+				<!-- Начало основного контента -->
+				<div class="main_content">
+					<div class="line line_1">
+						<div class="left_col">
+							<video poster="img/slide_for_video.png">
+								<source src="/media/video.oga">
+								<source src="/media/video.m4v">
+								<object type="video/ogg" data="/media/video.oga" width="260" height="176">
+								<param name="src" value="/media/video.oga">
+								<param name="autoplay" value="false">
+								<param name="autoStart" value="0">
+								<p><a href="/media/video.oga">Download this video file.</a></p>
+								</object>
+							</video>
+							<button id="video_play" type="button"></button>
+
+							<div class="weather_block">
+								<div class="termometr_block">12<img id="gradus" src="img/weather_gradus.png" alt=""><img id="weather" src="img/weather_img.png" alt=""></div>
+								<div class="date_block"><p>Saturday 16 january</p></div>
+							</div>
+
+						</div>
+
+						<div class="right_col">
+							<img src="img/Amsterdam_img.png" alt="">
+							<div class="info_block">
+								<h2>Amsterdam</h2>
+								<p>Amsterdam is the capital city of and the most populous within the Kingdom of the Netherlands. Amsterdam's name derives from Amstelredamme. Amsterdam is located in the western...</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="line line_2">
+						<div class="audio_block">
+							<img class="audio_img" src="img/img_for_audio.png" alt="">
+							<div class="song">
+								<p class="song_name">Geef mij maar Amsterdam</p>
+								<p class="singer_name">Johnny Jordaan</p>
+							</div>
+
+							<audio>
+								<source src="/media/audio.oga">
+								<source src="/media/audio.wav">
+								<object type="audio/x-wav" data="/media/audio.wav" width="290" height="45">
+									<param name="src" value="/media/audio.wav">
+									<param name="autoplay" value="false">
+									<param name="autoStart" value="0">
+									<p><a href="/media/audio.wav">Download this audio file.</a></p>
+								</object>
+							</audio>
+
+							<div class="bar">
+								<div class="progress_time">1:45</div>
+								<div class="progress"><div class="progress_line"></div></div>
+							</div>
+							<div class="controls">
+								<button id="audio_left" type="button"><img src="img/audio_btn_1.png" alt=""></button>
+								<button id="audio_pause" type="button"><img src="img/audio_btn_2.png" alt=""></button>
+								<button hidden id="audio_play" type="button"><img src="img/audio_btn_2.png" alt=""></button>
+								<button id="audio_right" type="button"><img src="img/audio_btn_3.png" alt=""></button>
+							</div>
+						</div>
+						
+						<div class="search_block">
+							
+							<form>
+								<input class="search" type="search" name="" value="" placeholder="Find your city place">
+								<label class="checkbox_label"><input class="checkbox" type="checkbox" name="" value=""> Add to favorites</label>
+								<button type="submit">search</button>
+							</form>
+
+						</div>
+						
+
+					</div>
+
+				</div>
+				
+			</div>
+			<!-- конец основного контента -->
+
+			<!-- Начало дополнительного контента -->
+			<aside>
+
+				<div class="something_place_block">
+					<img src="img/aside_img.png" alt="">
+					<h2>De Westerkerk</h2>
+					<p>Princengracht 281</p>
+					<button type="button">view on maps</button>
+				</div>
+
+				<div class="calendar_block">
+					<div class="calendar_header">
+						<div class="calendar_controls">
+							<h2>Saturday</h2>
+							<button id="calendar_left" type="button"><img src="img/calendar_left.png" alt=""></button>
+							<span>January</span>
+							<button id="calendar_right" type="button"><img src="img/calendar_right.png" alt=""></button>
+						</div>
+					</div>
+					<div class="calendar_body">
+						<table>
+							<tbody>
+								<tr>
+									<td>30</td>
+									<td>31</td>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>7</td>
+									<td>8</td>
+									<td>9</td>
+									<td>10</td>
+									<td>11</td>
+									<td>12</td>
+								</tr>
+								<tr>
+									<td>13</td>
+									<td>14</td>
+									<td>15</td>
+									<td>16</td>
+									<td>17</td>
+									<td>18</td>
+									<td>19</td>
+								</tr>
+								<tr>
+									<td>20</td>
+									<td>21</td>
+									<td>22</td>
+									<td>23</td>
+									<td>24</td>
+									<td>25</td>
+									<td>26</td>
+								</tr>
+								<tr>
+									<td>27</td>
+									<td>28</td>
+									<td>29</td>
+									<td>30</td>
+									<td>31</td>
+									<td>1</td>
+									<td>2</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+			</aside>
+		</div>
+	</div>
+</body>
+</html>
