@@ -1,0 +1,137 @@
+.row_header {
+	background-color: chocolate;	
+}
+.header {
+	background-color: chocolate;
+}
+.header a, a:hover {
+	color: black;
+	text-decoration: none;
+}
+.header h1 {
+	letter-spacing: 15px;
+    font-size: 350%;
+    background-color: chocolate;
+}
+.header h1 a {
+	color: currentcolor;
+}
+.header p {
+	color: snow !important;
+	font-size: 150%;
+	letter-spacing: 5px;
+}
+.navbar {
+	background-color: chocolate;
+}
+.collapse {
+	float: left !important;
+	clear: both;
+}
+nav {
+	border: none !important;
+}
+.nav-justified {
+	background-color: chocolate;
+	font-size: 120%;
+}
+.nav-justified>li.active>a, .nav-justified>li.active>a:focus, .nav-justified>li.active>a:hover {
+	color: black;
+	background-color: lightsteelblue;
+}
+.nav-justified>li>a {
+	color: black;
+	border-radius: 10px;
+}
+.nav-justified>li>a:hover {
+	background-color: lightsteelblue;
+}
+.navbar-inverse {
+	padding: 0.5%;
+	border-radius: 0; 	
+}
+@media (max-width: 767px) {
+
+	.navbar-collapse {
+		float: none !important;
+		text-align: center !important;
+	}
+	.nav-justified>li {
+		float: none;
+		
+	}
+	.nav-justified {
+		text-align: center !important;
+	}
+	.header h1 {
+		letter-spacing: 5px;
+		font-size: 280%;
+	}
+	.header {
+		text-align: center;
+	}
+}
+.margin8 {
+	margin-top: 8%;
+}
+.page_header {
+	font-size: 260%;
+	letter-spacing: 8px;
+}
+textarea.form-control {
+	height: 200px;
+}
+.panel {
+	border: none;
+}
+.panel-body {
+	background-color: currentcolor;
+}
+.panel-info>.panel-heading {
+	background-color: gray;
+	color: white;
+	border-color: transparent;
+}
+.sidebar-header {
+	font-size: 150%;
+	letter-spacing: ;
+}
+.input-lg {
+	font-size: 120%;
+}
+.form-control {
+	border-radius: 0px;
+}
+.list-group-item> a {
+	font-size: 100%;
+}
+#news>p {
+	color: white;
+}
+.list-group-item>a {
+	color: black;
+}
+.badge {
+	background-color: chocolate;
+}
+.clear {
+	clear: both;
+	height: 63px;
+}
+.wrapper {
+	min-height: 100%;
+}
+html, body {
+	height: 100%;
+}
+footer {
+	background-color: chocolate;
+	color: black;
+	padding: 18px 0;
+}
+footer a {
+	color: black;
+}
+footer a:hover {
+	color: snow;
+}
