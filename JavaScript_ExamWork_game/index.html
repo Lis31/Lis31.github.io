@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Clicker - Game</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+		<div class="wrap invis">
+			<div class="upper_field">
+			</div>
+			<div class="game_field">
+				<h1 class="game_message">Нажмите, чтобы начать игру</h1>
+				<div class="dragon_div invis"></div>
+				<div class="dragon_dead_div invis"></div>
+				<div class="ice_ball_div invis"></div>
+				<div class="dragon_attack_div invis"></div>
+				<div class="hero_div"></div>
+				<div class="hero_dead_div invis"></div>
+			</div>
+			<div class="lower_field">
+				<audio id="level_1_theme" src="sounds/level1_1.OGG"></audio>
+				<audio id="gameOverSound" src="sounds/gameOver.ogg"></audio>
+				<audio id="dragonRoar" src="sounds/DragonRoar.ogg"></audio>
+				<audio id="dragonFlySound" src="sounds/DragonFly.ogg"></audio>
+				<audio id="magicCastSound" src="sounds/magicCast.ogg"></audio>
+				<audio id="dragonDeadSound" src="sounds/DragonDead.ogg"></audio>
+				<audio id="youWinSound" src="sounds/youWin.ogg"></audio>
+			</div>
+		</div>
+	<div class="game_menu">
+	<h1 class="game_title">The Clicker</h1>
+		<div class="buttons">
+			<a class="game_start" href="#">Start Game</a><br>
+			<a class="credits" href="#">Credits</a>
+		</div>
+	</div>
+	<div class="level_2_menu invis">
+	<h1 class="level_title">Level 2</h1>
+		<div class="buttons">
+			<a class="level_2_start" href="#">Start</a><br>
+			<a class="exit" href="#">exit</a>
+		</div>
+	</div>
+	
+
+	<div class="wrap_2 invis">
+			<div class="upper_field_2">
+			</div>
+			<div class="level_2_field">
+				<h1 class="game_message_lvl_2 invis">Нажмите, чтобы начать игру</h1>
+				<div class="hero_2_div"></div>
+				<div class="hero_2_dead_div invis"></div>
+				<div class="trooper_div invis"></div>
+				<div class="trooper_dead_div invis"></div>
+			</div>
+			<div class="lower_field_2">
+				<audio id="level_2_theme" src="sounds/level_2.OGG"></audio>
+				<audio id="gameOverSound" src="sounds/gameOver.ogg"></audio>
+				<audio id="trooper_run_sound" src="sounds/trooper_run.OGG"></audio>
+				<audio id="trooper_dead_sound" src="sounds/trooper_dead.OGG"></audio>
+				<audio id="shoot_sound" src="sounds/trooper_shoot.OGG"></audio>
+				<audio id="hero2_attack_sound" src="sounds/hero_2_kick.OGG"></audio>
+				<audio id="youWinSound" src="sounds/youWin.ogg"></audio>
+			</div>
+		</div>
+	<div class="level_3_menu invis">
+		<h1 class="level_title">Level 3</h1>
+		<div class="buttons">
+			<a class="level_3_start" href="#">Start</a><br>
+			<a class="exit" href="#">exit</a>
+		</div>
+	</div>
+	<div class="wrap_3 invis">
+		<div class="upper_field_3">
+		</div>
+		<div class="level_3_field">
+			<h1 class="game_message_lvl_3 invis">Нажмите, чтобы начать игру</h1>
+			<div class="hero_3_left"></div>
+			<div class="hero_3_right invis"></div>
+			<div class="hero_3_dead_left invis"></div>
+			<div class="hero_3_dead_right invis"></div>
+			<div class="rogue invis"></div>
+			<div class="rogue_dead invis"></div>
+			<div class="pirate invis"></div>
+			<div class="pirate_dead invis"></div>
+			<div class="hero_3_walk_right invis"></div>
+			<div class="hero_3_walk_left invis"></div>
+		</div>
+		<div class="lower_field_3">
+			<audio id="level_3_theme" src="sounds/level_3.ogg"></audio>
+			<audio id="gameOverSound" src="sounds/gameOver.ogg"></audio>
+			<audio id="rogue_move_sound" src="sounds/rogue_move_sound.ogg"></audio>
+			<audio id="rogue_attack_sound" src="sounds/rogue_attack_sound.ogg"></audio>
+			<audio id="hero_3_left_run_sound" src="sounds/hero_3_left_run_sound.ogg"></audio>
+			<audio id="hero_3_left_attack_sound" src="sounds/hero_3_left_attack_sound.ogg"></audio>
+			<audio id="rogue_dead_sound" src="sounds/rogue_dead_sound.ogg"></audio>
+			<audio id="pirate_run_sound" src="sounds/pirate_run_sound.ogg"></audio>
+			<audio id="pirate_strike_sound" src="sounds/pirate_strike_sound.ogg"></audio>
+			<audio id="hero_3_right_run_sound" src="sounds/hero_3_right_run_sound.ogg"></audio>
+			<audio id="hero_3_right_attack_sound" src="sounds/hero_3_right_attack_sound.ogg"></audio>
+			<audio id="" src="sounds/"></audio>
+			<audio id="" src="sounds/"></audio>
+			<audio id="youWinSound" src="sounds/youWin.ogg"></audio>
+		</div>
+	</div>
+
+	<script src="scripts/jQuery.2.0.0.min.js"></script>
+	<script src="scripts/level_1.js" type="text/javascript"></script>
+	<script src="scripts/level_2.js" type="text/javascript"></script>
+	<script src="scripts/level_3.js" type="text/javascript"></script>
+
+</body>
+</html>
+	

@@ -1,0 +1,379 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+	background-color: black;
+	cursor: url(../img/cursor.gif), crosshair;
+}
+
+/*--------------------------------
+	Стили меню игры, меню уровней
+--------------------------------*/
+.game_menu, .level_2_menu, .level_3_menu {
+	position: absolute;
+	width: 100%;
+	height: 70%;
+	background-color: #111111;
+	z-index: 10;
+	text-align: center;
+	cursor: default;
+	padding-bottom: 150px;
+}
+
+.game_title, .level_title {
+	font-size: 48px;
+	margin-top: 180px;
+	margin-bottom: 40px;
+	color: royalblue;
+	font-family: 'Copperplate Gothic Light', Arial, sans-serif;;
+}
+
+.game_start, .level_2_start, .level_3_start {
+	font-size: 32px;
+	text-decoration: none;
+	color: khaki;
+	cursor: pointer;
+	/*font-weight: bold;*/
+	font-family: 'Copperplate Gothic Light', Arial, sans-serif;
+}
+.game_start:hover, .level_2_start:hover, .level_3_start:hover {
+	text-shadow: 0 0 20px #FFF;
+}
+
+.credits, .exit {
+	text-decoration: none;
+	display: block;
+	margin-top: 20px;
+	font-size: 24px;
+	color: forestgreen;
+	cursor: pointer;
+}
+
+/*--------------------------------
+		Стили верхнего поля
+--------------------------------*/
+
+.upper_field, .upper_field_2, .upper_field_3 {
+	width: 100%;
+	height: 55px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.game_message, .game_message_lvl_2, .game_message_lvl_3 {
+	position: absolute;
+	top: 100px;
+	left: 25%;
+	font-size: 50px;
+	color: red;
+	font-family: 'Copperplate Gothic Light', Arial, sans-serif;
+	-webkit-transition: 1s;
+	cursor: pointer;
+	text-align: center;
+}
+/*--------------------------------
+		Стили нижнего поля
+--------------------------------*/
+.lower_field, .lower_field_2, .lower_field_3 {
+	width: 100%;
+	height: 55px;
+	text-align: center;
+	color: white;
+	font-family: Arial;
+	cursor: default;
+}
+
+/*--------------------------------
+		Стили первого уровня
+--------------------------------*/
+.wrap {
+	width: 100%;
+}
+.game_field {
+	width: 100%;
+	height: 500px;
+	background: black url("../img/background.jpg") no-repeat center center fixed;
+}
+
+/*Стили блоков со спрайтами*/
+.dragon_div {
+	position: absolute;
+	width: 145px;
+	height: 112px;
+	background: url("../img/dragon_fly_sprite_final_1.png") no-repeat;
+	overflow: hidden;
+	margin-top: 23%;
+	margin-left: 40px;
+	z-index: 2;
+}
+
+.dragon_dead_div {
+	position: absolute;
+	width: 113px;
+	height: 112px;
+	background: url("../img/dragon_dead_sprite.png") no-repeat;
+	overflow: hidden;
+	margin-top: 22%;
+	margin-left: 40px;
+	z-index: 1;
+}
+
+.ice_ball_div {
+	position: absolute;
+	width: 115px;
+	height: 90px;
+	background: url("../img/ice_ball_sprite_final.gif") no-repeat;
+	overflow: hidden;
+	margin-top: 24%;
+	margin-left: 62%;
+	z-index: 3;
+	-webkit-transition: transform 1s;
+}
+
+.hero_div {
+	position: absolute;
+	width: 127px;
+	height: 90px;
+	background: url("../img/hero_sprite_final.gif") no-repeat;
+	background-position: -1143px;
+	overflow: hidden;
+	margin-top: 25%;
+	margin-left: 66%;
+	z-index: 1;
+}
+
+.dragon_attack_div {
+	position: absolute;
+	width: 188px;
+	height: 112px;
+	background: url("../img/dragon_attack_sprite.gif") no-repeat;
+	overflow: hidden;
+	margin-top: 23%;
+	margin-left: 60%;
+	z-index: 3;
+}
+
+.hero_dead_div {
+	position: absolute;
+	width: 73px;
+	height: 90px;
+	background: url("../img/hero_dead_sprite.gif") no-repeat;
+	background-position: -219px;
+	overflow: hidden;
+	margin-top: 25%;
+	margin-left: 72%;
+	z-index: 3;
+}
+
+.invis {
+	display: none;
+}
+/*.hidden {
+	visibility: hidden;
+}*/
+
+/*-----------------------------------
+	Стили второго уровня
+-----------------------------------*/
+.wrap_2 {
+	background-color: black;
+}
+.level_2_field {
+	background-color: black;
+	width: 100%;
+	height: 536px;
+	background: black url("../img/backLevel2.jpg") no-repeat center center fixed;
+	cursor: url(../img/cursor.gif), crosshair;
+	text-align: center;
+}
+
+/*Стили блоков со спрайтами*/
+
+.hero_2_div {
+	position: absolute;
+	width: 76px;
+	height: 98px;
+	background: url("../img/hero_2_sprite.gif") no-repeat;
+	overflow: hidden;
+	margin-top: 28%;
+	margin-left: 300px;
+	z-index: 2;
+}
+
+.hero_2_dead_div {
+	position: absolute;
+	width: 84px;
+	height: 104px;
+	background: url("../img/hero_dead_2_sprite.gif") no-repeat;
+	background-position: 0px;
+	overflow: hidden;
+	margin-top: 29%;
+	margin-left: 300px;
+	z-index: 3;
+}
+
+.trooper_div {
+	position: absolute;
+	width: 106px;
+	height: 106px;
+	background: url("../img/trooper_sprite.gif") no-repeat;
+	background-position: -1078px;
+	overflow: hidden;
+	margin-top: 27.5%;
+	margin-left: 900px;
+	z-index: 1;
+}
+
+.trooper_dead_div {
+	position: absolute;
+	width: 103px;
+	height: 101px;
+	background: url("../img/trooper_dead_sprite.gif") no-repeat;
+	background-position: -206px;
+	overflow: hidden;
+	margin-top: 28%;
+	margin-left: 800px;
+	z-index: 2;
+}
+
+
+/*-------------------------------
+	Стили третьего уровня
+--------------------------------*/
+
+.level_3_menu {
+	width: 100%;
+	margin-top: -608px;
+	z-index: 10;
+}
+
+.wrap_3 {
+	background-color: transparent;
+	z-index: 9;
+}
+
+.level_3_field {
+	width: 100%;
+	height: 500px;
+	position: absolute;
+	margin-top: -540px;
+	background: black url("../img/backLevel3.jpg") no-repeat center center fixed;
+	cursor: url(../img/cursor.gif), crosshair;
+	text-align: center;
+}
+
+.upper_field_3 {
+	position: absolute;
+	margin-top: -520px;
+	background-color: black;
+}
+
+.lower_field_3 {
+	position: absolute;
+	margin-top: -510px;
+	z-index: 10;
+}
+.hero_3_left {
+	position: absolute;
+	width: 70px;
+	height: 83px;
+	background: url("../img/hero_3_attack_left.gif") no-repeat;
+	overflow: hidden;
+	margin-top: 250px;
+	margin-left: 485px;
+	z-index: 2;
+}
+.hero_3_right {
+	position: absolute;
+	width: 92px;
+	height: 83px;
+	background: url("../img/hero_3_attack_right.gif") no-repeat;
+	overflow: hidden;
+	margin-top: 250px;
+	margin-left: 485px;
+	z-index: 10;
+}
+.hero_3_dead_left {
+	position: absolute;
+	width: 73px;
+	height: 90px;
+	background: url("../img/hero_dead_sprite.gif") no-repeat;
+	background-position: -292px;
+	overflow: hidden;
+	margin-top: 250px;
+	margin-left: 485px;
+	z-index: 2;
+}
+.hero_3_dead_right {
+	position: absolute;
+	width: 84px;
+	height: 104px;
+	background: url("../img/hero_dead_2_sprite.gif") no-repeat;
+	overflow: hidden;
+	margin-top: 240px;
+	margin-left: 485px;
+	z-index: 2;
+}
+.rogue {
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	background: url("../img/rogue_sprite_final.gif") no-repeat;
+	overflow: hidden;
+	margin-top: 256px;
+	margin-left: 50px;
+	z-index: 2;
+}
+.rogue_dead {
+	position: absolute;
+	width: 74px;
+	height: 81px;
+	background: url("../img/rogue_dead_sprite.gif") no-repeat;
+	background-position: -444px;
+	overflow: hidden;
+	margin-top: 256px;
+	margin-left: 50px;
+	z-index: 2;
+}
+.pirate {
+	position: absolute;
+	width: 109px;
+	height: 86px;
+	background: url("../img/pirate_sprite_final.gif") no-repeat;
+	overflow: hidden;
+	margin-top: 246px;
+	margin-left: 900px;
+	z-index: 2;
+}
+.pirate_dead {
+	position: absolute;
+	width: 89px;
+	height: 89px;
+	background: url("../img/pirate_dead_sprite.gif") no-repeat;
+	overflow: hidden;
+	margin-top: 246px;
+	margin-left: 900px;
+	z-index: 2;
+}
+.hero_3_walk_right {
+	position: absolute;
+	width: 40px;
+	height: 80px;
+	background: url("../img/hero_3_walk_sprite.gif") no-repeat;
+	overflow: hidden;
+	margin-top: 250px;
+	margin-left: 500px;
+	z-index: 2;
+}
+.hero_3_walk_left {
+	position: absolute;
+	width: 40px;
+	height: 80px;
+	background: url("../img/hero_3_walk_reverse_sprite.gif") no-repeat;
+	overflow: hidden;
+	margin-top: 250px;
+	margin-left: 500px;
+	z-index: 2;
+}
