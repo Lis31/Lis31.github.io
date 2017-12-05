@@ -26,9 +26,7 @@ function Game() {
 		$('.game_message').css({top: '200px'});
 		__self.domElems.gameMenu.toggleClass('invis');
 		__self.domElems.wrap.toggleClass('invis');
-		//временно стартуем с 3 левела для удобства работы с ним
-		// window.level_3.startLevel();
-		//-------------------------------------------------------
+		
 	});
 
 	$('.game_message').click(function(e) {
