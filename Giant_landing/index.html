@@ -10,6 +10,7 @@
 	<title>Giant</title>
 
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,29 +24,55 @@
 <body>
 
 	<header id="main_header" class="container-fluid">
-		<div class="wrapper">
+		
 			<div class="logo_and_nav row">
-				<div class="col-md-2 col-sm-2">
+				<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
 					<div class="logo">
 						<img src="assets/img/Logo.gif" alt="Логотип компании Giant">
 					</div>
 				</div>
-				<div class="col-md-10 col-sm-10">
+				
+				
+  
+
+
+
+
 					<nav>
-						<ul class="nav">
+						<ul class="nav hidden-xs">
 							<li class="nav-item"><a class="nav-link nav-link_active" href="#">Home</a></li>
 							<li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
 							<li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
 							<li class="nav-item"><a class="nav-link" href="#download">Download Now</a></li>
 						</ul>
 					</nav>
+
+					<div>
+					 
+						<button type="button" class="btn hamburger visible-xs pull-right" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <img src="assets/img/hamburger.png" alt="">
+            </button>
+
+        	</div>
+            
+            <div id="navbarCollapse" class="collapse navbar-collapse text-center">
+              <ul class="nav visible-xs">
+							<li class="nav-item"><a class="nav-link nav-link_active" href="#">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+							<li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+							<li class="nav-item"><a class="nav-link" href="#download">Download Now</a></li>
+						</ul>
+              
+
+            </div>
+
 				</div>
-			</div>
+			
 
 			<div class="container-fluid banner_wrap">
 				<section class="banner row">
 
-					<div class="banner_text col-md-12 col-sm-12 col-lg-6 col-xl-6">
+					<div class="banner_text col-md-6 col-sm-6 col-lg-6 col-xl-6 col-xs-12">
 						<h1 class="banner_text_header">A Powerful & Unique</h1>
 						<h1 class="banner_text_header">App Landing Template</h1>
 						<p class="banner_underheader_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -57,11 +84,10 @@
 
 					</div>
 
-					<div class="banner_image col-md-12 col-md-12 col-lg-6 col-xl-6">
-						<img class="banner_image_img" src="assets/img/iPhones.gif" alt="Айфоны">
-						<img class="iphone_screen iphone_screen_1" src="assets/img/Change This [1].png" alt="">
-						<img class="iphone_screen iphone_screen_2" src="assets/img/Change This [2].png" alt="">
-						<img class="iphone_screen iphone_screen_3" src="assets/img/Change This [3].png" alt="">
+					<div class="banner_image col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+						<img class="banner_image_img visible-lg" src="assets/img/iPhones.png" alt="Айфоны">
+						<img class="banner_image_img_50 hidden-lg" src="assets/img/iPhones_50%.png" alt="Айфоны">
+						
 					</div>
 
 				</div>
@@ -70,10 +96,10 @@
 	</header>
 
 	<section id="features" class="features container">
-
+		
 		<div class="row features_line">
-
-			<div class="features_item col-lg-4 col-md-4 col-sm-12 col-xs-12">
+		
+			<div class="features_item col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="features_ico col-lg-2 col-md-2"></div>
 				<div class="features_content col-lg-10 col-md-10">
 					<h2 class="features_header">Sell any product online</h2>
@@ -81,7 +107,7 @@
 				</div>
 			</div>
 
-			<div class="features_item col-lg-4 col-md-4 col-sm-12  col-xs-12">
+			<div class="features_item col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="features_ico col-lg-2 col-md-2"></div>
 				<div class="features_content col-lg-10 col-md-10">
 					<h2 class="features_header">Very easy to customize</h2>
@@ -89,7 +115,7 @@
 				</div>
 			</div>
 
-			<div class="features_item col-lg-4 col-md-4 col-sm-12  col-xs-12">
+			<div class="features_item col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="features_ico col-lg-2 col-md-2"></div>
 				<div class="features_content col-lg-10 col-md-10">
 					<h2 class="features_header">Unlimited colors</h2>
@@ -97,11 +123,11 @@
 				</div>
 			</div>
 
-		</div>
+		
 
-		<div class="row features_line">
+		
 
-			<div class="features_item col-lg-4 col-md-4 col-sm-12  col-xs-12">
+			<div class="features_item col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="features_ico col-lg-2 col-md-2"></div>
 				<div class="features_content col-lg-10 col-md-10">
 					<h2 class="features_header">Responive, HTML5, CSS3</h2>
@@ -109,7 +135,7 @@
 				</div>
 			</div>
 
-			<div class="features_item col-lg-4 col-md-4 col-sm-12  col-xs-12">
+			<div class="features_item col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="features_ico col-lg-2 col-md-2"></div>
 				<div class="features_content col-lg-10 col-md-10">
 					<h2 class="features_header">Designed to convert</h2>
@@ -118,7 +144,7 @@
 				
 			</div>
 
-			<div class="features_item col-lg-4 col-md-4 col-sm-12  col-xs-12">
+			<div class="features_item col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="features_ico col-lg-2 col-md-2"></div>
 				<div class="features_content col-lg-10 col-md-10">
 					<h2 class="features_header">With no boundaries</h2>
@@ -133,13 +159,14 @@
 	<section class="dont_leave">
 		<div class="container">
 			<div class="dont_leave_line row">
-
-				<div class="dont_leave_img_wrap col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<img class="dont_leave_mobile" src="assets/img/dont_leave_mobile.png" alt="Изображение айфона">
-					<img class="dont_leave_mobile_shadow" src="assets/img/dont_leave_mobile_shadow.png" alt="Тень айфона">
+			
+				<div class="dont_leave_img_wrap col-xl-5 col-lg-5 col-md-4 col-sm-4 col-xs-4">
+					<img class="dont_leave_mobile visible-lg visible-xl" src="assets/img/dont_leave_mobile.png" alt="Изображение айфона">
+					<img class="dont_leave_mobile visible-md visible-sm visible-xs" src="assets/img/dont_leave_mobile_50.png" alt="Изображение айфона">
+					<img class="dont_leave_mobile_shadow visible-lg visible-xl" src="assets/img/dont_leave_mobile_shadow.png" alt="Тень айфона">
 				</div>
 
-				<div class="dont_leave_content_wrap col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="dont_leave_content_wrap col-xl-7 col-lg-7 col-md-8 col-sm-8 col-xs-8">
 					<h1 class="dont_leave_content_header">We don’t leave you stranded</h1>
 					<p class="dont_leave_content_text_1">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
 		
@@ -158,10 +185,10 @@
 	</section>
 
 	<section class="carousel">
-		<div class="carousel_container">
+		<div class="carousel_container container">
 			<div class="row">
 				
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<h2 class="text-center">Take a look at our screenshots</h2>
 					<p class="text-center">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a</p>
 					<p class="text-center">UX designer, why develop this totally separate skill?</p>
@@ -181,10 +208,7 @@
 							<a class="carousel_nav_next text-center" href="#" id="next"></a>
 						
 					</div>
-					<div class="carousel_nav">
-     				<!-- <a href="#" class="carousel_nav_prev text-center" id="prev"></a> 
-     				<a class="carousel_nav_next text-center" href="#" id="next"></a> -->
-					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -311,7 +335,7 @@
 	</section>
 
 	<section class="testimonials">
-		<div class="conainer">
+		<div class="container">
 			<div class="row">
 				<div class="col-lg-3"></div>
 				<div class="col-lg-6 text-center">
@@ -321,7 +345,7 @@
 				<div class="col-lg-3"></div>
 			</div>
 			<div class="row text-center">
-				<div id="wrapper" class="col-lg-12">
+				<div id="wrapper" class="">
 
     				<div id="container">   	
 							<img src="assets/img/testimonials_1.png" alt="Feedback_1" />
@@ -329,11 +353,12 @@
 							<img src="assets/img/testimonials_3.png" alt="Feedback_1" />
 							<img src="assets/img/testimonials_1.png" alt="Feedback_1" />
 							<img src="assets/img/testimonials_2.png" alt="Feedback_1" />
-    				</div><!-- container -->
+    				</div>
+
     				<span id="carouselLeft" class="" id="prev"></span>
     				<span id="carouselRight" class="" id="next"></span>
 						
-					</div><!-- wrapper --> 
+					</div>
 			</div>
 		</div>
 	</section>
@@ -342,10 +367,10 @@
 		
 			<h2 class="download_header">Download Giant App Now</h2>
 		
-				<div class="download_body col-lg-12">
+				<div class="download_body">
 				
 					
-					<a class="download_item">
+					<a class="download_item col-lg-4">
 						<div class="download_item_img text-left">
 							<img src="assets/img/Mac_ico.png" alt="app store">
 						</div>
@@ -355,7 +380,7 @@
 						</div>
 					</a>
 
-					<a class="download_item">
+					<a class="download_item col-lg-4">
 						<div class="download_item_img text-left">
 							<img src="assets/img/android_ico.png" alt="play store">
 						</div>
@@ -365,7 +390,7 @@
 						</div>
 					</a>
 
-					<a class="download_item">
+					<a class="download_item col-lg-4">
 						<div class="download_item_img text-left">
 							<img src="assets/img/windows_ico.png" alt="microsoft store">
 						</div>
@@ -374,9 +399,10 @@
 							<p class="download_item_descr">Download from microsoft store</p>
 						</div>
 					</a>
+					</div>
 					
 				
-				</div>
+				
 			
 		
 		
@@ -401,14 +427,18 @@
 				</div>
 			</div>
 		</div>
+		<div class="footer_bottom">
+			
+		</div>
 	</footer>
 
 
-	<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/jQuery.2.0.0.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.waterwheelCarousel.js"></script>
 	<script type="text/javascript" src="assets/js/click-carousel.min.js"></script>
-	<script type="text/javascript" src="assets/js/"></script>
-	<script src="assets/js/script.js"></script>
+	
 	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	
 </body>
 </html>

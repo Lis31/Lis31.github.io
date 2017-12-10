@@ -1,9 +1,16 @@
 
+body {
+	width: 100% !important;
+	margin: 0 auto !important;
+	
+}
 
 section, footer {
-	max-width: 1920px !important;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
+	min-width: 100% !important;
+	max-width: 1920px;
+	margin-left: auto !important;
+	margin-right: auto !important;
 }
 
 button, a {
@@ -16,6 +23,8 @@ button, a {
 /* ------------------------------------------*/
 /* Стили хэдера*/
 /* ------------------------------------------*/
+
+
 #main_header {
 	max-width: 1920px;
 	background: #FD702D;
@@ -25,6 +34,9 @@ button, a {
 }
 .logo {
 	
+	img {
+		
+	}
 }
 
 .logo::after {
@@ -43,7 +55,23 @@ button, a {
 	max-width: 1155px;
 	margin: 0 auto;
 }
+.hamburger {
+	background-color: transparent;
+	border: 1px solid #FFF;
+}
+
+.hamburger:focus, .hamburger:active {
+	outline: none !important;
+	border: 1px solid #FFF !important;
+}
 /* Ширина макета 1915 px*/
+
+#navbarCollapse a {
+		color: #FFF;
+		font-family: 'RobotoBold', arial, sans-serif;
+		font-size: 14px;
+		padding: 7px 28px !important;
+}
 nav {
 	float: right !important;
 	margin-left: 10%;
@@ -53,7 +81,7 @@ nav {
 		display: inline-block !important;
 	}
 
-	a {
+	a, {
 		display: inline-block !important;
 		color: #FFF;
 		font-family: 'RobotoBold', arial, sans-serif;
@@ -63,7 +91,7 @@ nav {
 
 	a:hover, .nav-link_active {
 		color: #313131;
-		background-color: #FFF;
+		background-color: #FFF !important;
 		border-radius: 30px;
 	}
 
@@ -131,24 +159,11 @@ nav {
 	margin-top: -62px;
 }
 
-
-.iphone_screen {
-	position: absolute;
-}
-.iphone_screen_1 {
-	top: 152px;
-	left: 152px;
+.banner_image_img_50 {
+	margin-top: 40px;
+	margin-left: 150px;
 }
 
-.iphone_screen_2 {
-	top: 42px;
-	left: 386px;
-}
-
-.iphone_screen_3 {
-	top: -38px;
-	left: 610px;
-}
 
 /* ------------------------------------------*/
 /* Конец стилей хэдера*/
@@ -158,7 +173,8 @@ nav {
 /* ------------------------------------------*/
 /* Стили секции features*/
 /* ------------------------------------------*/
-.features {
+#features {
+	
 	background-color: #FFF;
 	padding-top: 115px;
 	padding-bottom: 70px;
@@ -167,10 +183,12 @@ nav {
 
 .features_line {
 	margin-bottom: 30px;
+	padding-left: 60px;
 }
 
 .features_item {
-	
+	// width: 395px;
+	margin-bottom: 30px;
 }
 .features_ico {
 	font-family: "fontAwesome";
@@ -187,20 +205,23 @@ nav {
 	content: '';
 	width: 72px;
 	height: 72px;
-	
 	border: 1px solid #F0F0F0;
 	border-radius: 100px;
 
 }
 
 .features_content {
-	margin-left: 61px;
+	width: 290px;
+	float: left !important;
+	margin-top: -15px;
+
 }
 .features_header {
 	color: #222222;
 	font-size: 26px;
 	font-family: 'dosisMedium', arial, sans-serif;
 	float: left;
+	margin-bottom: 33px;
 }
 .features_text {
 	clear: both;
@@ -231,13 +252,29 @@ nav {
 	padding-top: 98px;
 	padding-bottom: 102px;
 }
+.dont_leave_line {
+	margin: 0 auto !important;
+}
+
+.dont_leave_img_wrap {
+	float: left;
+}
 
 .dont_leave_mobile {
+	float: left;
 	margin-top: 20px;
+}
+.dont_leave_mobile_shadow {
+	position: absolute;
+	margin-top: 520px;
+	margin-left: -500px;
 }
 
 .dont_leave_content_wrap {
-	margin-top: 68px;
+	width: 50%;
+	float: left;
+	margin-top: 49px;
+	margin-left: 70px;
 }
 
 .dont_leave_content_header {
@@ -330,7 +367,7 @@ nav {
 #carousel {
 	padding: 25px;
 	background-color: #F7FAFC !important; 
-  width: 1100px;
+  max-width: 1100px;
   margin: 13px auto;
   height: 650px;
   position:relative;
@@ -418,10 +455,12 @@ textarea#newoptions {
 /* ------------------------------------------*/
 
 .pricing {
+	width: 97% !important;
 	padding-left: 42px;
 	padding-top: 110px;
-	padding-bottom: 120px;
+	padding-bottom: 103px;
 	.row {
+		width: 97% !important;
 		max-width: 1350px;
 		margin: 0 auto !important;
 	}
@@ -439,8 +478,8 @@ textarea#newoptions {
 	}
 }
 .pricing_body {
-	width: 1134px;
-	margin: 0 0 0 40px;
+	margin: 0 auto;
+	
 }
 
 .pricing_item {
@@ -450,6 +489,7 @@ textarea#newoptions {
 	width: 263px;
 	background-color: #F7FAFC;
 	margin-left: 30px;
+	margin-bottom: 20px;
 	h3 {
 		font: 20px 'dosisRegular', arial, sans-serif;
 		color: #222222;
@@ -457,6 +497,7 @@ textarea#newoptions {
 		padding-bottom: 14px;
 		margin-bottom: 0px;
 	}
+
 
 	.pricing_item_price {
 		padding-top: 16px;
@@ -501,10 +542,10 @@ textarea#newoptions {
 	}
 
 	.pricing_item_body {
-		padding-top: 73px;
+		padding-top: 43px;
 		padding-bottom: 21px;
-		padding-left: 33px;
-		padding-right: 26px;
+		// padding-left: -33px;
+		// padding-right: 26px;
 		p {
 			font: 14px 'robotoLight', arial, sans-serif;
 			color: #777777;
@@ -555,7 +596,7 @@ textarea#newoptions {
 .video {
 		padding-bottom: 145px;
 	.video_poster {
-		width: 99%;
+		width: 100%;
 		max-width: 1920px;
 		height: 400px !important;
 	}
@@ -609,21 +650,22 @@ textarea#newoptions {
 }
 
 #wrapper {
+
 	margin: 0 auto !important;
 	padding-top: 60px;
 	padding-bottom: 120px;
 }
 
 #container {
-	width: 100%;
-	max-width: 1290px !important;
+	width: 100% !important;
+	max-width: 1290px;
 	padding-top: 20px;
 	height: 300px;
 	overflow: hidden;
 	margin: 0 auto;
 }
 #container>img {
-	margin-left: 25px;
+	margin-right: 15px;
 	margin-bottom: 100px;
 }
 
@@ -632,7 +674,7 @@ textarea#newoptions {
 }
 
 #carouselLeft {
-	margin-top: -140px;
+	margin-top: -155px;
 	margin-left: -630px;
 	position: absolute;
 	cursor: pointer;
@@ -649,8 +691,8 @@ textarea#newoptions {
 }
 
 #carouselRight {
-	margin-top: -140px;
-	margin-left: 620px;
+	margin-top: -155px;
+	margin-left: 595px;
 	position: absolute;
 	cursor: pointer;
 	display: inline-block;
@@ -680,20 +722,19 @@ textarea#newoptions {
 /* Стили секции download*/
 /* ------------------------------------------*/
 .download {
-	width: 99%;
+	width: 100%;
 	background: linear-gradient(to right, #FA702B, #F31E7A);
-	padding-top: 108px;
-	padding-bottom: 120px;
-	
+	padding-top: 90px;
+	padding-bottom: 234px;
 }
 .download_header {
 	font: 36px 'dosisRegular', arial, sans-serif;
 	color: #FFF;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 }
 
 .download_body {
-	
+	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
 	.row {
@@ -701,55 +742,62 @@ textarea#newoptions {
 	}
 }
 
+.download_items_wrap {
+	margin-left: 50% !important;
+}
+
 .download_item {
 	display: block;
 	float: left;
 	height: 114px;
-	width: 360px !important;
-	padding-left: 0px;
-	margin: 0 15px;
+	width: 360px;
+	padding: 0px !important;
+	margin: 20px 15px;
 	background-color: #FFF !important;
-	a {
-		display: block;
-	}
+
 	.download_item_img {
 		float: left;
 		width: 114px;
 		background-color: #F7FAFC;
-		margin-left: 0px;
-			padding-left: 0px;
+		
 		.download_item_img>img {
-			margin-left: 0px;
-			padding-left: 0px;
+			
 		}
 
 	}
 }
-// .download_item:first-child, .download_item:last-child {
-// 	margin: 0;
-// }
-.download_item_text {
 
-	width: 246px;
-	height: 91px;
+.download_item:hover {
+		text-decoration: none;
+		color: #FFF;
+	}
+.download_item:first-child {
+	
+}
+.download_item:last-child {
+ 	margin-right: 0;
+}
+.download_item_text {
 	text-align: left;
-	width: 244px;
-	height: 114px;
+	width: 226px;
+	// height: 114px;
 	background: #FFF !important;
-	margin-left: 20px;
+	margin-left: 134px;
 }
 
 .download_item_header {
 	font: 30px 'dosisSemiBold', arial, sans-serif;
 	color: #222222;
-	padding-top: 21px;
+	
 	padding-bottom: 2px;
-	margin-left: 20px;
+	
 }
 .download_item_descr {
 	font: 14px 'robotoLight', arial, sans-serif;
 	color: #777777;
+	
 }
+
 
 /* ------------------------------------------*/
 /* Конец стилей секции download*/
@@ -762,7 +810,7 @@ textarea#newoptions {
 
 footer.main_footer {
 	padding-top: 60px;
-	padding-bottom: 55px;
+	
 	background-color: #222222;
 
 }
@@ -782,8 +830,11 @@ footer.main_footer {
 	}
 }
 
+
+
 .copyright {
 	font: 14px 'robotoLight', arial, sans-serif;
+	margin-bottom: 55px;
 	a {
 		text-decoration: none;
 		color: #FFF;
@@ -793,7 +844,14 @@ footer.main_footer {
 	}
 }
 
-
+.footer_bottom {
+	width: 100%;
+	float: left;
+	clear: both;
+	height: 8px;
+	background: linear-gradient(to bottom, #323232, #272727);
+	
+}
 
 
 /* ------------------------------------------*/
@@ -806,16 +864,200 @@ footer.main_footer {
 
 @media (max-width: 1370px) {
 	.banner_image_img {
-		margin-left: -36%;
+		margin-left: -20%;
 		margin-top: -45px;
 	}
 
-	.iphone_screen {
-		margin-left: -52%;
-		margin-top: 10px;
+	#carouselLeft {
+		
+		margin: 20px 0 0 -50px;
+		position: normal;
+		cursor: pointer;
+		display: inline-block;
+		font-family: 'fontAwesome';
+		font-size: 14px;
+		line-height: 35px;
+		width:37px;
+		height: 37px;
+		background-color: #FFFFFF;
+		border: 1px solid #EEEEEE;
+		border-radius: 100px;
+		color: #777777;
+	}
+
+	#carouselRight {
+		margin: 20px 0 0 50px;
+		position: normal;
+		cursor: pointer;
+		display: inline-block;
+		font-family: 'fontAwesome';
+		font-size: 14px;
+		line-height: 35px;
+		width:37px;
+		height: 37px;
+		background-color: #FFFFFF;
+		border: 1px solid #EEEEEE;
+		border-radius: 100px;
+		color: #777777;
+	}
+
+}
+
+@media (max-width: 1294px) {
+
+	.pricing_body {
+		padding: 0 20%;
+	
+	}
+	
+
+
+}
+
+@media (max-width: 1294px) {
+
+	.pricing_body {
+		padding: 0 15%;
+	}
+	
+}
+
+
+@media (max-width: 1175px) {
+	
+	.download_body {
+		width: 60%;
+		height: 300px;
+
+	}
+
+	.download_item {
+		margin-left: 50px;
+	}
+	
+}
+
+@media (max-width: 822px) {
+
+	.logo {
+		margin-left: 60px;
+	}
+	
+}
+
+@media (max-width: 768px) {
+
+
+	.banner_image_img_50 {
+		margin-top: -700px;
+		margin-left: 60%;
+	}
+
+	.dont_leave_mobile_shadow {
+		display: none;
+	}
+	.dont_leave_mobile {
+		display: none;
 	}
 
 
+}
+
+
+
+@media (max-width: 650px) {
+
+.download_item {
+		margin-left: 10px;
+}
+
+	.video_poster {
+		margin-left: 50px !important;
+	}
+
+	.video_btn {
+		margin-left: 170px;
+	}
+	
+.banner_text_header {
+
+	font-size: 36px;
+	
+}
+
+.banner_underheader_text {
+	text-align: left;
+}
+	
+}
+
+
+
+@media (max-width: 639px) {
+	#main_header, section {
+		padding-right: 100px !important;
+	}
+
+	.banner_image_img_50 {
+		margin-top: -300px;
+	}
+
+	.download_header {
+		margin-left: 80px;
+	}
+	
+}
+
+
+@media (max-width: 432px) {
+
+	.pricing_body {
+		padding: 0;
+		margin-left: 0;
+	}
+
+	.banner_image_img_50 {
+		margin-top: -300px;
+	}
+
+	.banner_text_header {
+
+	font-size: 24px;
+	
+}
+	
+	.features_ico {
+		float: none;
+		
+		margin-bottom: 20px;
+	}
+
+	.features_ico::after {
+		margin-left: 34%;
+	}
+
+	.features_item {
+		text-align: center;
+	}
+
+	.features_content {
+		text-align: left;
+	}
+
+	.features_header {
+		margin-bottom: 20px;
+	}
+
+
+	.download_item {
+		width: 114px;
+		margin-left: 80px;
+	}
+
+	.download_item_text {
+		display: none;
+	}
+	
 }
 
 /*подключаем шрифты*/
