@@ -1050,8 +1050,8 @@ Level_3.prototype.pirateDeadRender = function() {
 	pirateDead.removeClass('invis');
 
 	//вставляем звук
-	// var pirateDeadSound = document.getElementById('pirate_dead_sound');
-	// pirateDeadSound.play();
+	var pirateDeadSound = document.getElementById('pirate_dead_sound');
+	pirateDeadSound.play();
 
 	setTimeout(function(){
 	pirateDead.css({backgroundPosition: "-89px"});

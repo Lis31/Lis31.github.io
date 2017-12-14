@@ -365,8 +365,8 @@ Level_2.prototype.hero2RunRender = function() {
 	console.log(trooperPosition);
 
 	//Вставляем звук
-	// var hero2Run = document.getElementById('hero2RunSound');
-	// hero2Run.play();
+	var hero2Run = document.getElementById('hero2RunSound');
+	hero2Run.play();
 
 	setTimeout(function(){
 		hero2.css({backgroundPosition:"-77px"});
